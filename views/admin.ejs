@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/fontawsome/css/fontawesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="container  admin-container">
+            <div class="jumbotron ">
+                <div class="row">
+                    <div class="col-sm-6">
+                        View Users
+                        <table id="table" class=" table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                    <td class="">
+                                        sn
+                                    </td>
+                                    <td class="">
+                                        Fullname
+                                    </td>
+                                    <td class="col-sm">
+                                        Email
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="tablebody">
+
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+                <div class="admin-container">
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <table id="table" class=" table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <td class="">
+                                            sn
+                                        </td>
+                                        <td class="">
+                                            Image Name
+                                        </td>
+                                        <td class="col-sm-7">
+                                            Image
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablebody1">
+
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                        <div class="col-sm-4">
+                            <div id="alertholder" class="alert alert-success" style="display:none">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>Success!</strong> <span id="alert">Indicates a successful or positive action.</span>
+                            </div>
+                            Upload Images
+                            <form name="myform">
+                                <div class="form-group">
+                                    <label for="images">Select images</label>
+                                    <input id="fileinput" class="form-control" type="file" name="images" multiple> </div>
+                                <input id="filesubmit" type="submit" class=" btn btn-primary">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="/js/jquery-3.4.1.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/fontawsome/js/fontawesome.min.js"></script>
+        <script src="/js/main.js"></script>
+
+</body>
+
+</html>

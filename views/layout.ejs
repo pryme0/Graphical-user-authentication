@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/fontawsome/css/fontawesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand btn btn-primary " href="/">
+                <h4 class="text-center">GRAPHICAL USER AUTHENTICATION SYSTEM</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a id="registerlink" class="nav-link" href="/user/register">Register <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="loginlink" class="nav-link" href="/user/login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <%- body %>
+
+        <script src="/js/jquery-3.4.1.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/fontawsome/js/fontawesome.min.js"></script>
+        <script src="/js/main.js"></script>
+
+</body>
+
+</html>

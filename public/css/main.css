@@ -1,0 +1,20 @@
+body {
+    padding-top: 3px;
+    padding-bottom: 15px;
+    color: black;
+    height: 100%;
+    width: auto;
+    background-color: #868e96;
+    background-attachment: fixed;
+    background-image: url('/imgs/background.jpeg');
+    background-size: cover
+}
+
+.admin-container {
+    padding-top: 70px;
+    margin: auto;
+}
+
+.dashboard {
+    color: white;
+}
