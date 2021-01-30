@@ -14,7 +14,7 @@ dotenv.config({
 
 
 const app = express()
-console.log(process.env.MONGODB_URL)
+
 
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true }).then(conect=>{
     console.log('mongodb connected successfully');
