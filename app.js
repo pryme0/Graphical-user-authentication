@@ -1,14 +1,26 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const dotenv = require('dotenv');
 const expressSession = require('express-session')
 const nodemailer = require('nodemailer')
 const fileUpload = require('express-fileupload')
 const expressLayouts = require('express-ejs-layouts')
 
-const app = express()
+// load env configuration as early as possible
+dotenv.config({
+    path: '.env'
+});
 
-mongoose.connect('mongodb://localhost:27017/graphicalpassword', { useNewUrlParser: true })
+
+const app = express()
+console.log(process.env.MONGODB_URL)
+
+mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true }).then(conect=>{
+    console.log('mongodb connected successfully');
+}).catch(err=>{
+    console.log(err);
+})
 
 //app.use(fileUpload())
 app.use(expressSession({
